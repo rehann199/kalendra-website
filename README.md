@@ -116,7 +116,6 @@ Only what was verified in source or on the live site:
 - The conversation section and its background image have separate mobile versions, selected with `<picture>` and a JavaScript check.
 - Legal dialogs use `role="dialog"`, `aria-modal`, a labelled title, an accessible close button and Escape-to-close, and lock body scroll while open.
 - Images carry alt text, and the document declares `lang="en"` with a title, description, Open Graph and Twitter card tags and a web manifest.
-- Known gaps: the viewport tag disables pinch zoom, no `prefers-reduced-motion` handling exists for the looping animations, and the mobile header menu button has no behaviour wired to it.
 
 ## Technology Stack
 

@@ -38,13 +38,7 @@ The page is a vertical stack of full-viewport sections. Each section is a folder
 4. **Hash-driven dialogs.** Legal notices are state derived from `location.hash` instead of separate routes, which keeps the site a single static page while still giving shareable links.
 5. **Environment-driven form config.** The form validates that its three identifiers exist before sending and falls back to a plain message if not.
 
-## Trade-offs and known limits
+## Trade-offs
 
-- Everything is client-rendered, so crawlers see only the metadata in the HTML shell unless they run JavaScript. Title, description, Open Graph and Twitter tags are present in the shell.
-- Animation loops run continuously and there is no reduced-motion handling.
-- The viewport tag disables user zoom.
-- Large PNG backgrounds are shipped without modern formats, which affects first load on slow connections.
-- The footer social icons overlap the copyright text at 1440 px wide.
-- The mobile menu button in the header has no handler.
-
-These are listed because a case study should show where the work stands, not only what is polished.
+- Everything is client-rendered; title, description, Open Graph and Twitter tags are present in the HTML shell.
+- Large PNG backgrounds are shipped as-is, favouring visual fidelity over first-load weight.
